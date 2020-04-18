@@ -1,6 +1,7 @@
 // aplicação a respeito de memoria no computador:
 
 const os = require('os')
+const sms = require('./dev-m2')
 
 setInterval (() => {
 
@@ -21,4 +22,6 @@ const dev = {
 console.clear()
 console.log("=== Memorie PC DELL ===")
 console.table(dev)
+log(`$(JSON.stringify(dev))`)
+
 }, 1000)
