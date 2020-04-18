@@ -13,8 +13,8 @@ const mem_liv = parseInt(freemem() / 1024**2)
 const porcentagem = parseInt((mem_liv/mem_ocup) * 100)
 
 const dev = {
-  Total: `${mem_ocup}MB`,
-  Usado: `${mem_liv}MB`,
+  Total: `${mem_liv}MB`,
+  Usado: `${mem_ocup}MB`,
   Porce: `${porcentagem}%`
 }
 
