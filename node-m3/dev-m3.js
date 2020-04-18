@@ -7,11 +7,10 @@ http.createServer((req, res) => {
   if (req.url === '/') {
       fs.readFile(
         path.join(__dirname, 'public', 'index.html'),
-        (ERRO, content) => {
-          if (ERRO) throw ERRO
-
+        (err, content) => {
+          if (err) throw err
           res.end(content)
         }
       )
   }
-}).listen(5050, () => console.log('Servidor rodando...'))
+}).listen(5000, () => console.log('Servidor rodando...'))
